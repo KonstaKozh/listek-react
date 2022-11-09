@@ -1,21 +1,21 @@
 import React, {useState, useEffect} from "react"
-import slide4 from "../../components/Slider/img-slider/slide4.jpg"
-import slide5 from "../../components/Slider/img-slider/slide5.jpg"
-import slide6 from "../../components/Slider/img-slider/slide6.jpg"
-import slide7 from "../../components/Slider/img-slider/slide7.jpg"
-import slide8 from "../../components/Slider/img-slider/slide8.jpg"
-import slide9 from "../../components/Slider/img-slider/slide9.jpg"
-import slide10 from "../../components/Slider/img-slider/slide10.jpg"
-import "../../components/Slider/slider.css"
+import slide4 from "../Slider/img-slider/slide4.jpg"
+import slide5 from "../Slider/img-slider/slide5.jpg"
+import slide6 from "../Slider/img-slider/slide6.jpg"
+import slide7 from "../Slider/img-slider/slide7.jpg"
+import slide8 from "../Slider/img-slider/slide8.jpg"
+import slide9 from "../Slider/img-slider/slide9.jpg"
+import slide10 from "../Slider/img-slider/slide10.jpg"
+import "./slider.css"
 
 const img = [
-   <img key={slide4} src={slide4} />,
-   <img key={slide5} src={slide5} />,
-   <img key={slide6} src={slide6} />,
-   <img key={slide7} src={slide7} />,
-   <img key={slide8} src={slide8} />,
-   <img key={slide9} src={slide9} />,
-   <img key={slide10} src={slide10} />,
+   <img key={slide4} src={slide4} alt={'slide'}/>,
+   <img key={slide5} src={slide5} alt={'slide'}/>,
+   <img key={slide6} src={slide6} alt={'slide'}/>,
+   <img key={slide7} src={slide7} alt={'slide'}/>,
+   <img key={slide8} src={slide8} alt={'slide'}/>,
+   <img key={slide9} src={slide9} alt={'slide'}/>,
+   <img key={slide10} src={slide10} alt={'slide'}/>,
 ]
 
 export const Slider: any = () => {
