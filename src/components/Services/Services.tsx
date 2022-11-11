@@ -11,7 +11,7 @@ export const Services: any = () => {
             {myData.map((item) => {
                const {id, image, title, text} = item
                return <div key={id}>
-                  <img src={image} alt={title} />
+                  <img className='w-40' src={image}  alt={title} />
                   <h3>{title}</h3>
                   <p>{text}</p>
                </div>
