@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react"
-import slide4 from "../Slider/img-slider/slide4.jpg"
-import slide5 from "../Slider/img-slider/slide5.jpg"
-import slide6 from "../Slider/img-slider/slide6.jpg"
-import slide7 from "../Slider/img-slider/slide7.jpg"
-import slide8 from "../Slider/img-slider/slide8.jpg"
-import slide9 from "../Slider/img-slider/slide9.jpg"
-import slide10 from "../Slider/img-slider/slide10.jpg"
+import slide4 from "../Slider/img-slider/slide4.avif"
+import slide5 from "../Slider/img-slider/slide5.avif"
+import slide6 from "../Slider/img-slider/slide6.avif"
+import slide7 from "../Slider/img-slider/slide7.avif"
+import slide8 from "../Slider/img-slider/slide8.avif"
+import slide9 from "../Slider/img-slider/slide9.avif"
+import slide10 from "../Slider/img-slider/slide10.avif"
 import "./slider.css"
 
 const img = [
@@ -35,19 +35,19 @@ export const Slider: any = () => {
    const nextImgIndex = activeIndex === img.length - 1 ? 0 : activeIndex + 1
 
    return (
-      <div className="slider">
-         <div className="slider-img slider-img-prev"
-              key={prevImgIndex}>
-            {img[prevImgIndex]}
+         <div className="slider">
+            <div className="slider-img slider-img-prev"
+                 key={prevImgIndex}>
+               {img[prevImgIndex]}
+            </div>
+            <div className="slider-img"
+                 key={activeIndex}>
+               {img[activeIndex]}
+            </div>
+            <div className="slider-img slider-img-next"
+                 key={nextImgIndex}>
+               {img[nextImgIndex]}
+            </div>
          </div>
-         <div className="slider-img"
-              key={activeIndex}>
-            {img[activeIndex]}
-         </div>
-         <div className="slider-img slider-img-next"
-              key={nextImgIndex}>
-            {img[nextImgIndex]}
-         </div>
-      </div>
    )
 }
